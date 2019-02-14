@@ -7,12 +7,15 @@ OU EMAIL____________: bradenmunn@ou.edu
 Tasks:
 1. Implement the CalculateTwoTokens method
 2. Parse the String in parseAndExecute
+3. Finish test cases in execute() method
 
 Estimated Time (minutes):
 1. 15
-2. 10
+2. 5
+3. 10
 
 Actual Time (minutes):
 1. XXX
-2. XXX
+2. 5
+3. 10
 */}
