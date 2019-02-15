@@ -34,18 +34,19 @@ public class Calculator
      */
     protected static int calculateTwoTokens(String[] tokens) throws NumberFormatException, CalculatorException
     {
-
+    	String command = tokens[0];
         int a = Integer.parseInt(tokens[1]); // Throws NumberFormatException if the second token is not an int value.
-        /*
-        try 
+       
+        // First condition means if the command is not "negate" or "halve," throw an exception
+        if(!(command.equalsIgnoreCase("negate") || command.equalsIgnoreCase("halve")))
         {
-        	String command = tokens[0] throws CalculatorException
+        	throw new CalculatorException("Illegal Command");
         }
-        catch(CalculatorException ce)
-        {
-        	System.out.println("");
-        }
-        */
+        else if(command.equalsIgnoreCase("negate"))
+        	a = (-1) * a;
+        else if(command.equalsIgnoreCase("halve"))
+        	a = a / 2;
+        
         return a;
     }
 
@@ -80,8 +81,24 @@ public class Calculator
     protected static int calculateThreeTokens(String[] tokens)
             throws ArithmeticException, NumberFormatException, CalculatorException
     {
-        // TODO: complete this...
-    	return 0;
+    	int num1 = Integer.parseInt(tokens[0]);
+    	String command = tokens[1];
+    	int num2 = Integer.parseInt(tokens[2]);
+    	
+    	int result;
+    	// First condition means if the command is not "negate" or "halve," throw an exception
+    	if(!(command.equals("+") || command.equals("-") || command.equals("/")))
+        {
+        	throw new CalculatorException("Illegal Command");
+        }
+        else if(command.equals("+"))
+        	result = num1 + num2;
+        else if(command.equals("-"))
+        	result = num1 - num2;
+        else
+        	result = num1 / num2;
+    	
+    	return result;
     }
 
     /**
@@ -169,16 +186,26 @@ public class Calculator
     	{
     		String[] tokens = input.split(" ");
         	int result = execute(tokens);
+        	if(result == Integer.MIN_VALUE)
+        	{
+        		return "quit";
+        	}
+        	else
+        	{
+        		return "The result is: " + result;
+        	}
     	}
     	catch(CalculatorException ce)
     	{
     		return "Calculator Exception, message is: " + ce.getMessage();
     	}
-    	return "";
-    	
-    	
-        // TODO: complete this...
-        // Hint: you should try and call execute(). If execute encounters an error, it will throw an exception. This
-        // method will catch those exceptions and respond accordingly.
+    	catch(NumberFormatException nfe)
+    	{
+    		return "Input number cannot be parsed to an int. Please try again.";
+    	}
+    	catch(ArithmeticException ae)
+    	{
+    		return "Attempted to divide by 0. Please try again.";
+    	}
     }
 }

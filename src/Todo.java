@@ -5,17 +5,20 @@ OU ID_______________: 113483760
 OU EMAIL____________: bradenmunn@ou.edu
 
 Tasks:
-1. Implement the CalculateTwoTokens method
-2. Parse the String in parseAndExecute
-3. Finish test cases in execute() method
+1. Parse the String in parseAndExecute
+2. Finish test cases in execute() method
+3. Implement calculateTwoTokens method
+4. Implement the calculateThreeTokens method
 
 Estimated Time (minutes):
-1. 15
-2. 5
-3. 10
+1. 5
+2. 15
+3. 25
+4. 15
 
 Actual Time (minutes):
-1. XXX
-2. 5
-3. 10
+1. 5
+2. 15
+3. 20
+4. 10
 */}
