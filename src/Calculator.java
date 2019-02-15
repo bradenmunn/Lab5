@@ -87,7 +87,7 @@ public class Calculator
     	int num2 = Integer.parseInt(tokens[2]);
     	
     	int result;
-    	// First condition means if the command is not "negate" or "halve," throw an exception
+    	// First condition means if the command is not "+", "-," or "/," throw an exception
     	if(!(command.equals("+") || command.equals("-") || command.equals("/")))
         {
         	throw new CalculatorException("Illegal Command");
