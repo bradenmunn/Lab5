@@ -9,16 +9,19 @@ Tasks:
 2. Finish test cases in execute() method
 3. Implement calculateTwoTokens method
 4. Implement the calculateThreeTokens method
+5. Test code, clarify with comments
 
 Estimated Time (minutes):
 1. 5
 2. 15
 3. 25
 4. 15
+5. 15
 
 Actual Time (minutes):
 1. 5
 2. 15
 3. 20
 4. 10
+5. 15
 */}
