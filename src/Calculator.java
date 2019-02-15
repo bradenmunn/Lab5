@@ -37,7 +37,7 @@ public class Calculator
     	String command = tokens[0];
         int num1 = Integer.parseInt(tokens[1]); // Throws NumberFormatException if the second token is not an int value.
        
-        int result = -1;
+        int result;
         // First condition means if the command is not "negate" or "halve," throw an exception
         if(!(command.equalsIgnoreCase("negate") || command.equalsIgnoreCase("halve")))
         {
@@ -45,7 +45,7 @@ public class Calculator
         }
         else if(command.equalsIgnoreCase("negate"))
         	result = (-1) * num1;
-        else if(command.equalsIgnoreCase("halve"))
+        else // Must be "halve"
         	result = num1 / 2;
         
         return result;
@@ -96,7 +96,7 @@ public class Calculator
         	result = num1 + num2;
         else if(command.equals("-"))
         	result = num1 - num2;
-        else
+        else // Must be "/"
         	result = num1 / num2;
     	
     	return result;
