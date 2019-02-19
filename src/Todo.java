@@ -11,6 +11,8 @@ Tasks:
 4. Implement the calculateThreeTokens method
 5. Complete JUnit tests for the calculateTwoTokens method
 6. Complete JUnit tests for the calculateThreeTokens method
+7. Complete JUnit tests for the execute method
+8. Complete JUnit tests for the parseAndExecute method
 
 Estimated Time (minutes):
 1. 5
@@ -19,6 +21,8 @@ Estimated Time (minutes):
 4. 15
 5. 15
 6. 10
+7. 10
+8. 10
 
 Actual Time (minutes):
 1. 5
@@ -26,5 +30,8 @@ Actual Time (minutes):
 3. 20
 4. 10
 5. 10
+6. 10
+7. 10
+8. 15
 
 */}
