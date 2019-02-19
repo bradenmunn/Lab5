@@ -9,7 +9,8 @@ Tasks:
 2. Finish test cases in execute() method
 3. Implement calculateTwoTokens method
 4. Implement the calculateThreeTokens method
-5. Test code, clarify with comments
+5. Complete JUnit tests for the calculateTwoTokens method
+6. Complete JUnit tests for the calculateThreeTokens method
 
 Estimated Time (minutes):
 1. 5
@@ -17,11 +18,13 @@ Estimated Time (minutes):
 3. 25
 4. 15
 5. 15
+6. 10
 
 Actual Time (minutes):
 1. 5
 2. 15
 3. 20
 4. 10
-5. 15
+5. 10
+
 */}
